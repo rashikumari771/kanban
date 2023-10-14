@@ -1,0 +1,66 @@
+.DropdownMenu {
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0; /* Align with the button */
+    display: none; /* Initially hidden */
+    flex-direction: column; /* Display options in a column */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1; /* Ensure it's above other content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for a modal effect */
+  }
+  
+  /* Show the DropdownMenu when Header is in the hover state */
+  .Header:hover .DropdownMenu {
+    display: flex;
+  }
+  
+  /* Dropdown option styles (grouping-options and sorting-options) */
+  .grouping-options,
+  .sorting-options {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  label {
+    margin-right: 5px;
+    color: #333;
+  }
+  
+  select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Style for the dropdown arrow */
+  select:after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #ccc;
+    color: #333;
+    padding: 5px;
+    pointer-events: none;
+    cursor: pointer;
+  }
+  
+  select:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Apply styles to select when it's open */
+  select:active,
+  select:focus {
+    background-color: #f5f5f5;
+  }
+
+  
+  
+  

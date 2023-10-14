@@ -1,6 +1,5 @@
-// DropdownMenu.js
 import React from 'react';
-import './DropdownMenu.css'; // Add CSS for styling
+import './DropdownMenu.css';
 
 const DropdownMenu = ({
   groupingOption,
