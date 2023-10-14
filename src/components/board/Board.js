@@ -29,22 +29,20 @@ class Board extends Component {
       users.forEach((user) => {
         usersDict[user.id] = user;
       });
-      this.setState({ tickets, users: usersDict });
+      this.setState({ tickets, users: usersDict }, () => {
+        // Call filterItems inside the callback to ensure data is available
+        this.filterItems();
+      });
     } catch (error) {
       console.error(error);
     }
   }
+  
 
   // Define a filter function based on state variables
   async filterItems() {
     const { tickets, groupingOption, sortingOption } = this.state;
     let filteredItems = {};
-    console.log(
-      "change occurred in board",
-      this.props.groupingOption,
-      this.props.sortingOption,
-      filteredItems
-    );
     if (groupingOption === 'Status'||groupingOption === 'status') {
       tickets.forEach((ticket) => {
         if (!filteredItems[ticket.status]) filteredItems[ticket.status] = [];
