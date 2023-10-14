@@ -1,0 +1,17 @@
+.Board {
+    /* Your existing styles for the Board component */
+  }
+  
+  .Groups {
+    display: flex;
+  }
+  
+  .Group {
+    margin-right: 20px; /* Adjust as needed */
+  }
+  
+  .Columns {
+    display: flex;
+    flex-direction: column;
+  }
+  
