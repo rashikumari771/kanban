@@ -1,5 +1,7 @@
 .Board {
-  /* Your existing styles for the Board component */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .Groups {
@@ -15,4 +17,15 @@
 .Columns {
   display: flex;
   flex-direction: column;
+}
+.Group h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.Group > h3 {
+  margin: 0;
+  width: 100%; 
+  text-align: center;
 }

@@ -1,0 +1,22 @@
+/* Reset some default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Set a background color for the whole app */
+  }
+  
+  /*we can Add global styles or styles that apply to the entire app */
+  /* For example, you can set a max-width to limit the content width */
+  .App {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center align the content */
+  }
+  
+  /* Apply styles to anchor tags (hyperlinks) */
+  a {
+    text-decoration: none;
+    color: #0077cc; /* Set a link color */
+  }
+  
+  

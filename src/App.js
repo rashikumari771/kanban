@@ -12,17 +12,17 @@ class App extends Component {
       sortingOption: 'Priority',
     };
   }
-
+  // handle toggle
   toggleDropdown = () => {
     this.setState((prevState) => ({
       isDropdownVisible: !prevState.isDropdownVisible,
     }));
   };
-  
+  // handle group by
   handleGroupingChange = (event) => {
     this.setState({ groupingOption: event.target.value });
   };
-  
+  // handle  sort by 
   handleSortingChange = (event) => {
     this.setState({ sortingOption: event.target.value });
   };
